@@ -26,6 +26,29 @@ def test_subtract_ten_none():
     assert maths.subtract_ten(None) is None
 
 
+def test_multiply_ten():
+    assert 50 == maths.multiply_ten(5)
+
+
+def test_multiply_ten_str_int():
+    assert maths.multiply_ten('5') == '50'
+
+
+def test_multiply_ten_none():
+    assert maths.multiply_ten(None) is None
+
+
+def test_divide_ten():
+    assert 15 == maths.divide_ten(150)
+
+
+def test_divide_ten_str_int():
+    assert maths.divide_ten('150') == '15'
+
+
+def test_divide_ten_none():
+    assert maths.divide_ten(None) is None
+
 
 def test_large_number():
 

@@ -17,3 +17,25 @@ def subtract_ten(x):
         return None
     else:
         return x - 10
+
+
+def multiply_ten(x):
+    if type(x) == str:
+        number = int(x)
+        result = number * 10
+        return str(result)
+    elif x is None:
+        return None
+    else:
+        return x * 10
+
+
+def divide_ten(x):
+    if type(x) == str:
+        number = int(x)
+        result = number // 10
+        return str(result)
+    elif x is None:
+        return None
+    else:
+        return x // 10
